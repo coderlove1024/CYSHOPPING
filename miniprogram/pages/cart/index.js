@@ -42,7 +42,7 @@ Page({
         let { cart } = this.data
         let index = cart.findIndex(item => item.goods_id === e.currentTarget.dataset.id)
         if (cart[index].num === 1 && operation == -1) {
-            const res = await showModal({ content: "您是否要删除" })
+            const res = await showModal({ content: "您是否删除" })
             if (res.confirm) {
                 cart.splice(index, 1)
                 this.setCart(cart);
