@@ -112,11 +112,11 @@ Page({
     async handlePay() {
         const { address, totalnum } = this.data;
         if (!address) {
-            await showToast({ title: "您还没有选择收货地址" })
+            await showToast({ title: "您还没有选收货地址" })
             return
         }
         if (totalnum === 0) {
-            await showToast({ title: "您还没有选购商品" });
+            await showToast({ title: "您还没有选商品" });
             return;
         }
         wx.navigateTo({
