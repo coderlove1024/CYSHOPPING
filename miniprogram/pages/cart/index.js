@@ -42,7 +42,7 @@ Page({
         let { cart } = this.data
         let index = cart.findIndex(item => item.goods_id === e.currentTarget.dataset.id)
         if (cart[index].num === 1 && operation == -1) {
-            const res = await showModal({ content: "您是否要删除？" })
+            const res = await showModal({ content: "您是否要删除" })
             if (res.confirm) {
                 cart.splice(index, 1)
                 this.setCart(cart)
@@ -112,7 +112,7 @@ Page({
     async handlePay() {
         const { address, totalnum } = this.data;
         if (!address) {
-            await showToast({ title: "您还没有选收货地址" })
+            await showToast({ title: "您还没有选地址" })
             return
         }
         if (totalnum === 0) {
