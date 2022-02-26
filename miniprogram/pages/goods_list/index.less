@@ -1,0 +1,41 @@
+.tab{
+    display: flex;
+    .tabItem{
+        flex: 1;
+        text-align: center;
+        height: 80rpx;
+        line-height: 80rpx;
+        font-size: 33rpx;
+       
+    }
+}
+.active{
+    color:var(--themeColor) ;
+    border-bottom: 1px solid currentColor;
+}
+.goods_item{
+    display: flex;
+    padding: 33rpx 0;
+    font-size: 30rpx;
+    .goodsLeft{
+        flex: 2;
+        image{
+            width: 80%;
+        }
+    }
+    .goodsRight{
+        position: relative;
+        flex: 5;
+        .goods_price{
+            position: absolute;
+            bottom: 5rpx;
+            left: 13rpx;
+            font-size: 34rpx;
+            color: var(--themeColor);
+        }
+    }
+}
+.scrollContent{
+    height: ~'calc(100vh - 90rpx)';
+
+}

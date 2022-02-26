@@ -1,0 +1,102 @@
+/* pages/goods_detail/index.wxss */
+page{
+    padding-bottom: 100rpx;
+}
+.swiper{
+   
+        height: 65vw;
+        text-align: center;
+        image{
+          width: 60%;
+        }
+      
+}
+.goods_price{
+    color:var(--themeColor);
+    font-weight: 600;
+    font-size: 32rpx;
+    margin:10rpx 0 30rpx;
+}
+.goodsinfo{
+    display: flex;
+    font-size: 31rpx;
+    padding-bottom: 10rpx;
+    color: #000;
+    border-bottom: 17rpx solid #ccc;
+    .left{
+        flex: 7;
+        border-right: 2px solid #ccc;
+        display: -webkit-box;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp:2;
+
+    }
+    .right{
+        flex:2;
+        text-align: center;
+
+    }
+}
+.goodsBaseInfo{
+    .infoTitle{
+        color: var(--themeColor);
+        font-size: 30rpx;
+        padding: 30rpx;
+        margin-bottom: 6rpx;
+        font-weight: 600;
+    }
+    .infoContent{
+        border-top: 5rpx solid #ccc;
+    }
+}
+.bottomBar{
+    position: fixed;
+    display: flex;
+    height: 100rpx;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-top: 1rpx solid #ccc;
+    .bottom-left{
+        flex: 6;
+        display: flex;
+        background-color: #ccc;
+        .kefu,.share,.shopCar{
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+            button{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+              }
+        }
+        
+    }
+    .bottom-right{
+        flex: 6;
+        display: flex;
+        line-height: 90rpx;
+        text-align: center;
+        font-size: 25rpx;
+        .addCart,.buyNow{
+            flex:1;
+        }
+        .addCart{
+            color: #ffecc1;
+            background-color: #ffa400;
+        }
+        .buyNow{
+            color: #ffecc1;
+            background-color: #f0544f;
+
+        }
+    }
+}

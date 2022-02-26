@@ -1,0 +1,43 @@
+.index_swiper{
+    width: 750rpx;
+    height: 340rpx;
+    image{
+        width: 100%;
+    }
+
+}
+.nav-list{
+    display: flex;
+    .nav-list-item{
+        flex: 1;
+        image{
+            width: 100%;
+           
+        }
+    }
+}
+.floor{
+    .floor-top{
+        image{
+            width: 750rpx;
+           
+        }
+    }
+    .floor-bottom{
+        navigator{
+            float: left;
+            width: 33.33%;
+            
+            &:nth-last-child(-n+4){
+                // 386/232=h/250;
+                // height = 386*250/232/2
+                height: 208rpx;
+                border-left: 10rpx solid #fff;
+            }
+        image{
+             height: 100%; 
+             width: 100%;
+            }
+        }
+    }
+}

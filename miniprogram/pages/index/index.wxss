@@ -1,0 +1,31 @@
+.index_swiper {
+  width: 750rpx;
+  height: 340rpx;
+}
+.index_swiper image {
+  width: 100%;
+}
+.nav-list {
+  display: flex;
+}
+.nav-list .nav-list-item {
+  flex: 1;
+}
+.nav-list .nav-list-item image {
+  width: 100%;
+}
+.floor .floor-top image {
+  width: 750rpx;
+}
+.floor .floor-bottom navigator {
+  float: left;
+  width: 33.33%;
+}
+.floor .floor-bottom navigator:nth-last-child(-n+4) {
+  height: 208rpx;
+  border-left: 10rpx solid #fff;
+}
+.floor .floor-bottom navigator image {
+  height: 100%;
+  width: 100%;
+}

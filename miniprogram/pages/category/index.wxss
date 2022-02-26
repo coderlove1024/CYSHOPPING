@@ -1,0 +1,36 @@
+.category {
+  display: flex;
+  height: calc( 100vh - 90rpx);
+  font-size: 30rpx;
+}
+.category .cat-left {
+  flex: 1;
+}
+.category .cat-left .cat-left-item {
+  text-align: center;
+  padding: 8px 10px;
+}
+.category .cat-right {
+  flex: 3;
+}
+.category .cat-right .cat-right-item .cat-title {
+  width: 100%;
+  height: 40rpx;
+  line-height: 40rpx;
+  float: left;
+  text-align: center;
+  margin-top: 40rpx;
+}
+.category .cat-right .cat-right-item .cat-list .item {
+  float: left;
+  width: 33.33%;
+}
+.category .cat-right .cat-right-item .cat-list .item image {
+  width: 100%;
+}
+.category .cat-right .cat-right-item .cat-list .item .cat-content-item {
+  text-align: center;
+}
+.active {
+  color: var(--themeColor);
+}

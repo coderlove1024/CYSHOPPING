@@ -1,0 +1,115 @@
+page {
+  background-color: #edece8;
+}
+.userinfo {
+  height: 50vh;
+  width: 100%;
+  position: relative;
+}
+.userinfo .bgimg {
+  height: 100%;
+  filter: blur(10rpx);
+}
+.userinfo .user {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translateX(-50%);
+}
+.userinfo .user .smaimage {
+  height: 120rpx;
+  width: 120rpx;
+  border-radius: 50%;
+}
+.userinfo .user .usertext {
+  margin-top: 20rpx;
+}
+.user_btn {
+  position: relative;
+  height: 50vh;
+  width: 100%;
+  border: 1rpx solid greenyellow;
+  font-size: 38rpx;
+  padding: 30rpx;
+}
+.user_btn .login {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10rpx;
+  border: 1rpx solid greenyellow;
+  color: greenyellow;
+  top: 40%;
+}
+.user_btn .login .login1 {
+  padding: 30rpx;
+}
+.user_main {
+  position: relative;
+}
+.user_main .user_content {
+  padding-bottom: 100rpx;
+  position: absolute;
+  width: 90%;
+  top: -50rpx;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.user_main .user_content .user_ino {
+  background-color: #fff;
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+.user_main .user_content .user_ino .info_item {
+  flex: 1;
+  text-align: center;
+  padding: 20rpx;
+}
+.user_main .user_content .user_ino .num {
+  color: var(--themeColor);
+}
+.user_main .user_content .myorder {
+  margin-top: 20rpx;
+}
+.user_main .user_content .myorder .order_title {
+  padding: 20rpx;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+.user_main .user_content .myorder .order_mes {
+  display: flex;
+  background-color: #fff;
+}
+.user_main .user_content .myorder .order_mes .order_mes_item {
+  padding: 20rpx;
+  flex: 1;
+  text-align: center;
+}
+.user_main .user_content .myorder .order_mes .order_mes_item .iconfont {
+  color: var(--themeColor);
+}
+.user_main .user_content .address {
+  margin-top: 20rpx;
+  background-color: #fff;
+  padding: 20rpx;
+}
+.user_main .user_content .others {
+  margin-top: 20rpx;
+}
+.user_main .user_content .others .phone {
+  padding: 20rpx;
+  display: flex;
+  background-color: #fff;
+  justify-content: space-between;
+}
+.user_main .user_content .others .feedback {
+  background-color: #fff;
+  padding: 20rpx;
+  margin-top: 10rpx;
+}
+.user_main .user_content .others .aboutus {
+  background-color: #fff;
+  padding: 20rpx;
+  margin-top: 10rpx;
+}

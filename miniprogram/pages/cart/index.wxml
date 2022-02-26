@@ -1,0 +1,81 @@
+<!--pages/cart/index.wxml-->
+<view class="adress" wx:if="{{username==''?true:false}}">
+    <view class="address_btn">
+    <button bindtap="handleChooseAddress" type="primary"  plain  >获取收货地址</button>
+    </view>
+</view>
+<view class="address" wx:else>
+    <view class="infoLeft">
+        <view class="name">收货人:{{username}}</view>
+        <view class="Detailaddress">{{address}}</view>
+    </view>
+    <view class="infoRight">{{tel}}</view>
+
+ 
+</view>
+
+<view class="title">
+    购物车
+</view>
+<view class="cartContent">
+    <view class="cartItem" wx:for="{{cart}}" wx:key="goods_id">
+        <view class="checkbox">
+            <checkbox-group data-id="{{item.goods_id}}" bindchange="handeItemChange">
+                <checkbox checked="{{item.checked}}">
+                </checkbox>
+            </checkbox-group>
+        </view>
+       
+           <navigator class="image" target="" url="" hover-class="navigator-hover" open-type="navigate">
+                <view class="">
+                <image class="" src="{{item.goods_small_logo}}"  mode="widthFix">
+                </image>
+            </view>
+           </navigator>
+            <view class="textInfo">
+                <view class="text">
+                    {{item.goods_name}}
+                </view>
+                <view class="bottom">
+                    <view class="price">￥{{item.goods_price}}</view>
+                    <view class="button">
+                        <view class="edit"  bindtap="handleItemNumEdit" data-id="{{item.goods_id}}" data-operation="-1">-</view>
+                        <view class="num">
+                            {{item.num}}
+                        </view>
+                        <view class="edit"  bindtap="handleItemNumEdit" data-id="{{item.goods_id}}" data-operation="1">+</view>
+                    </view>
+                </view>
+            </view>
+
+
+       
+          
+
+    </view>
+    
+</view>
+<div class="cartBottom">
+    <view class="allcheck">
+        <checkbox-group bindchange="handleItemAllCheck">
+            <checkbox checked="{{allchecked}}">
+                全选
+            </checkbox>
+        </checkbox-group>
+    </view>
+    <view class="total">
+        <view class="totalprice">
+            合计:
+            <view>
+                {{totalprice}}
+            </view>
+        </view>
+        
+        <view class="text">
+            包含运费
+        </view>
+    </view>
+    <view class="gobuy" bindtap="handlePay">
+        结算({{totalnum}})
+    </view>
+</div>

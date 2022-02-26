@@ -1,0 +1,133 @@
+/* pages/cart/index.wxss */
+page {
+  padding-bottom: 100rpx;
+}
+.cartContent .cartItem {
+  border-bottom: 5rpx solid #dbafa9;
+  display: flex;
+  height: 200rpx;
+}
+.cartContent .cartItem .checkbox {
+  flex: 1;
+  height: 200rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cartContent .cartItem .image {
+  flex: 3;
+  text-align: center;
+}
+.cartContent .cartItem .image image {
+  width: 70%;
+}
+.cartContent .cartItem .textInfo {
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+}
+.cartContent .cartItem .textInfo .text {
+  position: absolute;
+  top: 20rpx;
+  left: 20rpx;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.cartContent .cartItem .textInfo .bottom {
+  display: flex;
+  justify-content: space-around;
+}
+.cartContent .cartItem .textInfo .bottom .price {
+  position: absolute;
+  bottom: 20rpx;
+  left: 20rpx;
+  font-size: 35rpx;
+  color: var(--themeColor);
+}
+.cartContent .cartItem .textInfo .bottom .button {
+  position: absolute;
+  bottom: 20rpx;
+  right: 20rpx;
+  display: flex;
+  text-align: center;
+  line-height: 55rpx;
+}
+.cartContent .cartItem .textInfo .bottom .button .edit {
+  font-weight: 600;
+  width: 55rpx;
+  height: 55rpx;
+  border: 1rpx solid #ccc;
+}
+.cartContent .cartItem .textInfo .bottom .button .num {
+  margin: 0 15rpx;
+}
+.title {
+  font-size: 40rpx;
+  color: var(--themeColor);
+  padding: 20rpx;
+  margin-top: 20rpx;
+  border-bottom: 5rpx solid #dbafa9;
+  border-top: 5rpx solid #dbafa9;
+}
+.address {
+  font-size: 30rpx;
+  font-weight: 600;
+  padding: 20rpx;
+  display: flex;
+  color: #666;
+}
+.address .infoLeft {
+  flex: 7;
+}
+.address .infoRight {
+  flex: 3;
+}
+.cartBottom {
+  position: fixed;
+  background-color: #fff;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  border-top: 3rpx solid #ccc;
+  height: 100rpx;
+}
+.cartBottom .allcheck {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cartBottom .total {
+  flex: 3;
+  text-align: right;
+  position: relative;
+}
+.cartBottom .total .totalprice {
+  display: flex;
+  position: absolute;
+  font-size: 32rpx;
+  top: 0;
+  right: 0;
+}
+.cartBottom .total .totalprice view {
+  color: var(--themeColor);
+  margin-right: 10rpx;
+}
+.cartBottom .total .text {
+  position: absolute;
+  bottom: 23rpx;
+  right: 12rpx;
+}
+.cartBottom .gobuy {
+  color: #fff;
+  flex: 1;
+  line-height: 100rpx;
+  text-align: center;
+  font-size: 35rpx;
+  background-color: var(--themeColor);
+}

@@ -1,0 +1,151 @@
+/* pages/cart/index.wxss */
+page{
+    padding-bottom: 100rpx;
+
+}
+.cartContent{
+    .cartItem{
+        
+        border-bottom:5rpx solid #dbafa9;
+        display: flex;
+        height: 200rpx;
+    
+    .checkbox{
+        flex: 1;
+        height: 200rpx;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .image{
+        flex: 3;
+        text-align: center;
+        image{
+            width: 70%;
+           
+        }
+    }
+    .textInfo{
+        flex: 5;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        position: relative;
+        .text{
+            position: absolute;
+            top: 20rpx;
+            left: 20rpx;
+            display: -webkit-box;
+            overflow: hidden;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp:2;
+        }
+
+        .bottom{
+            display: flex;
+            justify-content: space-around;
+            .price{
+                position: absolute;
+                bottom: 20rpx;
+                left: 20rpx;
+                font-size: 35rpx;
+                color: var(--themeColor);
+
+            }
+            .button{
+                position: absolute;
+                bottom: 20rpx;
+                right: 20rpx;
+                display: flex;
+                text-align: center;
+                line-height: 55rpx;
+                .edit{
+                    
+                    font-weight: 600;
+                    width: 55rpx;
+                    height: 55rpx;
+                    border: 1rpx solid #ccc;
+                }
+                .num{
+                    margin: 0 15rpx;
+                }
+                
+            }
+          
+
+        }
+
+    }
+   
+
+}
+}
+.title{
+    font-size: 40rpx;
+    color: var(--themeColor);
+    padding: 20rpx;
+    margin-top: 20rpx;
+    border-bottom:5rpx solid #dbafa9;
+    border-top:5rpx solid #dbafa9 ;
+
+}
+.address{
+    font-size: 30rpx;
+    font-weight: 600;
+    padding: 20rpx;
+    display: flex;
+    color: #666;
+    .infoLeft{
+        flex: 7;
+    }
+    .infoRight{
+        flex: 3;
+    }
+
+}
+.cartBottom{
+    position: fixed;
+  background-color: #fff;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    border-top: 3rpx solid #ccc;
+    height: 100rpx;
+   
+    .allcheck{
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .total{
+        flex: 3;
+        text-align: right;
+        position: relative;
+        .totalprice{
+            display: flex;
+            position: absolute;
+            font-size: 32rpx;
+            top: 0;
+            right: 0;
+            view{
+                color: var(--themeColor);
+                margin-right: 10rpx;
+            }
+        }
+        .text{
+            position: absolute;
+            bottom: 23rpx;
+            right: 12rpx;
+        }
+    }
+    .gobuy{
+        color: #fff;
+        flex: 1;
+        line-height: 100rpx;
+        text-align: center;
+        font-size: 35rpx;
+        background-color: var(--themeColor);
+    }
+}
