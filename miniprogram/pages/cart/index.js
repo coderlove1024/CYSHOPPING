@@ -45,7 +45,7 @@ Page({
             const res = await showModal({ content: "您是否要删除" })
             if (res.confirm) {
                 cart.splice(index, 1)
-                this.setCart(cart)
+                this.setCart(cart);
             }
 
         } else {
